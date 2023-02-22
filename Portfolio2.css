@@ -1,0 +1,191 @@
+
+/*
+font-family:'Roboto+Slab', sans-serif;
+font-family:'Lobster', sans-serif;
+font-family:'Unbounded', cursive;
+font-family:'Pacifico', cursive;
+*/
+
+
+/* Grid system */
+
+#grid-contaier {
+    display:grid;
+    grid-template-areas:
+    ' header header header header header header'
+    '. about about about about .'
+    '. skills skills skills skills .'
+    '. projects projects projects projects .'
+    'footer footer footer footer footer footer' ;
+    grid-template-columns: 16.5 16.5 16.5 16.5 16.5 16.5;
+}
+
+header { grid-area:header;
+        background-color:rgba(20, 20, 59, 0.785); 
+        width: 100%;
+        top: 0px;
+        margin: 2px;
+        position:fixed;}
+#about { grid-area:about }
+#skills { grid-area:skills }
+#projects { grid-area:projects }
+#contact { grid-area:footer }
+
+
+
+body{
+    background: url(/Images/bestbackground.jpg) ;
+    background-size:cover;
+}
+
+.headings {
+    font-family:Pacifico;
+    display:inline;
+    margin-left:10%
+}
+
+h2 {
+    display: inline;
+    color:rgb(236, 3, 139);
+    font-family: Unbounded;
+}
+
+/* HEADER */
+
+
+
+h1{
+    display:inline;
+    margin:0px 0px 0px 20%; /* clockwise */
+    text-align:center;
+    font-size:70px;
+    color:rgb(236, 3, 139);
+    font-family: Pacifico;
+}
+
+nav {
+    display:inline;
+    margin:5% 0% 0% 8%; /* clockwise */
+}
+
+nav > a {
+    color:rgb(236, 3, 139);
+    text-decoration: none;
+    margin:8px;
+    display: inline;
+    font-family: Unbounded;
+}
+
+img {
+    margin:10px 0px 0px 10px
+}
+
+/* About Me */
+
+#about-parent {
+    margin: 20% 0% 0% 0%;
+    display: grid;
+    grid-template-areas: '. about about about about .';
+    background-color: rgba(20, 20, 59, 0.742);
+    font-family:Unbounded ;
+}
+
+
+/* Skills */
+
+
+#skills-parent {
+    display:grid;
+    grid-template-areas:
+    '. skills skills skills skills .';
+
+    background-color: rgba(20, 20, 59, 0.785);
+    margin: 10% 0% 10%  0%
+}
+
+#skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+h3 {
+    color:rgb(236, 3, 139);
+    font-family: Unbounded;
+}
+
+p {
+    color: rgb(236, 3, 139);
+    font-family: Unbounded;
+}
+
+.card-item {
+    background-color: rgba(21, 21, 71, 0.785);
+    color:rgb(236, 3, 139)
+}
+
+/* Projects */
+
+
+
+
+
+/* Footer--Contact */
+
+footer{
+    background-color: rgba(21, 21, 71, 0.785);
+}
+
+#footer-parent {
+    display: grid;
+    grid-template-areas: 'footer footer footer footer footer footer';
+    margin:10% 0% 0% 0%;
+}
+
+#footer-container {
+    justify-content:space-evenly;;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+
+.contact h3 {
+    margin-left:190px;
+    font-family:'Unbounded', sans-serif;
+    font-size:medium;
+    }
+
+form {
+    text-align: center;
+    display:block;
+    margin-top: 10%;
+    margin-left: 250px;
+}
+
+form > label{
+    text-align:center;
+    font-size: medium;
+    font-family: 'Unbounded', sans-serif;
+    color: rgb(236, 3, 139);;
+    }
+
+
+
+/* Buttons */
+
+#contact button{
+    background-color:rgba(21, 21, 71, 0.785);
+    color:rgb(236, 3, 139);
+    }
+#textbox:hover {
+    background-color: rgb(85, 3, 236);
+}
+
+.btn:hover,
+input:hover,
+button:hover {background-color:rgba(21, 21, 71, 0.785)}
+
+#contact button:hover,
+input:hover,
+button:hover {background-color:rgb(85, 3, 236)}

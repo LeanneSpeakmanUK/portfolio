@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Lobster&family=Roboto+Slab&family=Unbounded&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/Practice/Portfolio2.css" />
+  </head>
+  <body>
+    <!--Header-->
+    <div id="grid-container">
+      <header>
+        <img
+          src="/Images/SoftareEngineering_background.webp"
+          alt="#"
+          width="200px"
+          height="100px"
+        />
+        <h1 class="headings">Leanne Speakman</h1>
+        <nav>
+          <a href="/Practice/Portfolio2.html">Home</a>
+          <a href="#about-jump"> About Me </a>
+          <a href="#jump">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact </a>
+        </nav>
+      </header>
+
+      <!--About Me-->
+      <div id="about-jump"></div>
+      <br />
+      <br />
+      <dl id="about-parent">
+        <div id="about" class="about">
+          <br />
+          <h2
+            id="about"
+            ;
+            style="
+              color: rgb(236, 3, 139);
+              margin-top: 20px;
+              margin-left: 190px;
+            "
+            ;
+          >
+            About Me:&#128105;&#8205;&#128102;
+          </h2>
+          <p
+            id="about"
+            ;
+            style="
+              color: rgb(236, 3, 139);
+              font-size: large;
+              text-align: center;
+            "
+            ;
+          >
+            <b>
+              Welcome, my name is Leanne Speakman. I am a single mother with a 4
+              year old son who i love going on adventures and exploring with.
+              <br />This year i am determined and dedicated to start my new
+              career doing software development with Just IT. <br />This year is
+              finally going to be MY year!<br />
+              I am currently studying HTML, CSS and JavaScript. There is NO end
+              to what i am willing and raring to learn. I love a challenge!<br />
+              I am a committed, hard working individual who has already learnt
+              so much in such a short period of time.<br />
+              I also have a lot of hobbies which i like to do in my spare time.
+              Please see the list below;
+              <br />
+              <br />
+            </b>
+            <label for="hobbies" style="color: rgb(236, 3, 139)"
+              >Hobbies:</label
+            >
+            <input
+              list="activities"
+              name="hobbies"
+              id="hobbies"
+              style="background-color: grey; color: rgb(236, 3, 139)"
+              required
+            />
+
+            <datalist id="activities">
+              <option value="Coding"></option>
+              <option value="Wildlife Photography"></option>
+              <option value="Cooking"></option>
+              <option value="Family Adventures"></option>
+              <option value="Electrics"></option>
+              <option value="Gaming"></option>
+              <option value="Football"></option>
+            </datalist>
+          </p>
+          <br />
+        </div>
+      </dl>
+      <!--Skills-->
+      <div id="jump"></div>
+      <br />
+      <br />
+      <dl id="skills-parent">
+        <div id="skills">
+          <h2 class="headings"></h2>
+          <div id="skills-container">
+            <div class="card-item">
+              <h3 style="text-align: center"><u>HTML</u></h3>
+              <img
+                src="/Images/newHTMLlogo.png"
+                alt="skills Imange"
+                width="200px"
+                height="200px"
+              />
+              <p style="text-align: center">I have been Learning HTML</p>
+            </div>
+
+            <div class="card-item">
+              <h3 style="text-align: center"><u>CSS</u></h3>
+              <img
+                src="/Images/newcsslogo.png"
+                alt="skills Imange"
+                width="200px"
+                height="200px"
+              />
+              <p style="text-align: center">I have been leaning CSS</p>
+            </div>
+
+            <div class="card-item">
+              <h3 style="text-align: center"><u>JavaScript</u></h3>
+              <br />
+              <img
+                src="/Images/JavaScript-LogoTransparent.png"
+                alt="skills Imange"
+                width="280px"
+                height="170px"
+              />
+              <p style="text-align: center">
+                <br />
+                I have started learning JavaScript
+              </p>
+            </div>
+          </div>
+          <br /><br />
+        </div>
+      </dl>
+
+      <!--Projects-->
+      <div id="projects"></div>
+
+      <!--Contact Me-->
+      <!--Footer-->
+      <footer>
+        <dl id="footer-parent">
+          <div id="footer-container" class="contact">
+            <h3 id="contact">Contact Me:&#128242;</h3>
+
+            <form id="contact">
+              <label for="first">Forename:</label><br />
+              <input type="text" id="first" name="first" /><br />
+              <label for="second">Surname:</label><br />
+              <input type="text" id="second" name="second" /><br />
+              <label for="contact">Contact Number:</label><br />
+              <input type="text" id="contact" name="contact" /><br />
+              <label for="enquiry">Enquiry:</label><br />
+              <textarea
+                id="textbox"
+                cols="20"
+                rows="8"
+                width="165px"
+                height="500px"
+                readonly="true"
+              ></textarea>
+              <!--<input type="text" id="enquiry" name="enquiry" /><br /> -->
+              <br />
+              <button id="contact">Submit</button> &nbsp; &nbsp;
+              <button id="contact">Reset</button> <br /><br />
+            </form>
+          </div>
+        </dl>
+      </footer>
+    </div>
+  </body>
+</html>
