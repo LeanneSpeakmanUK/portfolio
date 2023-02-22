@@ -34,7 +34,7 @@ header { grid-area:header;
 
 
 body{
-    background: url(/Images/bestbackground.jpg) ;
+    background: url(/portfolio/images/bestbackground.jpg) ;
     background-size:cover;
 }
 
